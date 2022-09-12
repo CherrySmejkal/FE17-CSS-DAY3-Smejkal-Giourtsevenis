@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -6,40 +6,51 @@
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 header {
-    font-size: 22px;
     border-bottom: 10px solid black;
 }
 
-h1 {
+header h1 {
+    font-size: 28px;
     margin-bottom: 3px;
+}
+
+header div {
+    font-size: 11px;
 }
 
 p {
     font-size: 8px;
 }
 
+sup {
+    font-size: 15px;
+}
+
 .label {
     background-color: white;
-    width: 260px;
+    width: 250px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 45px;
     border: 2px solid darkgrey;
     padding: 0 5px;
     padding-bottom: 4px;
     border-radius: 3px;
 }
 
-.servings {
-    font-size: 13px;
-}
-
 .label-row {
     font-size: 11px;
     border-bottom: 2px solid darkgrey;
+    padding-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label-rowb {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,11 +64,16 @@ p {
 .column-names {
     font-size: 9px;
     align-items: flex-end;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .category {
     flex-grow: 8;
+}
+
+.categoryb {
+    flex-grow: 3;
+    width: 10%;
 }
 
 .value {
@@ -68,12 +84,45 @@ p {
     text-align: right;
 }
 
+.middleb {
+    width: 15%;
+}
+
 .right {
     flex-grow: 0;
     width: 15%;
     text-align: right;
 }
 
+.rightb {
+    flex-grow: 0;
+    width: 15%;
+}
+
+.second-part div {
+    font-size: 8px;
+}
+
 .indent {
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.indentb {
+    margin-left: 7px;
+}
+
+#daily {
+    flex-direction: row-reverse;
+    font-size: 7px;
+    font-weight: bolder;
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+}
+
+#footer {
+    font-size: 8px;
 }
